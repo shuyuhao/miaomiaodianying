@@ -1,0 +1,14 @@
+module.exports={
+    devServer:{
+        proxy:{
+            '/api':{
+                target:'http://39.97.33.178',
+                changeOrigin:'true'
+            },
+            '/api2':{
+                target:'http://192.168.43.229:8989',
+                changeOrigin:'true'
+            }
+        }
+    }
+}
